@@ -1,0 +1,21 @@
+.main {
+  background-color: rgb(255, 255, 255);
+  width: 985px;
+  height: 600px;
+  margin-left: 550px;
+  margin-top: 200px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.res {
+  width: 600px;
+  margin-left: 200px;
+}
+
+.start {
+  margin-left: 355px;
+}
