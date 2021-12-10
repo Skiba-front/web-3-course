@@ -45,38 +45,68 @@ for (let i = 0; i < res4.length; i++) {
   })
 }
 
+function check () {
+  let count = 0
+  for (let i = 0; i < res1.length; i++) {
+    if (res1[i].checked === true) {
+      count++
+    }
+  }
+  for (let i = 0; i < res2.length; i++) {
+    if (res2[i].checked === true) {
+      count++
+    }
+  }
+  for (let i = 0; i < res3.length; i++) {
+    if (res3[i].checked === true) {
+      count++
+    }
+  }
+  for (let i = 0; i < res4.length; i++) {
+    if (res4[i].checked === true) {
+      count++
+    }
+  }
+
+  return count === 4
+}
+
 count.addEventListener('click', () => {
-let lineTwo = []
-let all = 0
+ if (teacher.value.trim() != '' && check()) {
+  let lineTwo = []
+  let all = 0
 
-for (let i = 0; i < res1.length; i++) {
-  if (res1[i].checked === true) {
-    lineTwo.push(i + 2)
+  for (let i = 0; i < res1.length; i++) {
+    if (res1[i].checked === true) {
+      lineTwo.push(i + 2)
+    }
   }
-}
-for (let i = 0; i < res2.length; i++) {
-  if (res2[i].checked === true) {
-    lineTwo.push(i + 2)
+  for (let i = 0; i < res2.length; i++) {
+    if (res2[i].checked === true) {
+      lineTwo.push(i + 2)
+    }
   }
-}
-for (let i = 0; i < res3.length; i++) {
-  if (res3[i].checked === true) {
-    lineTwo.push(i + 2)
+  for (let i = 0; i < res3.length; i++) {
+    if (res3[i].checked === true) {
+      lineTwo.push(i + 2)
+    }
   }
-}
-for (let i = 0; i < res4.length; i++) {
-  if (res4[i].checked === true) {
-    lineTwo.push(i + 2)
+  for (let i = 0; i < res4.length; i++) {
+    if (res4[i].checked === true) {
+      lineTwo.push(i + 2)
+    }
   }
-}
-for (let i = 0; i < lineTwo.length; i++) {
-  all += lineTwo[i]
-}
+  for (let i = 0; i < lineTwo.length; i++) {
+    all += lineTwo[i]
+  }
 
-  res.value = `Преподаватель: ${teacher.value}
-Полученные оценки: ${lineTwo.join(' ')}
-Общее количество баллов: ${all}
-Качество преподавания: ${(all/4).toFixed(2)}`
+    res.value = `Преподаватель: ${teacher.value}
+  Полученные оценки: ${lineTwo.join(' ')}
+  Общее количество баллов: ${all}
+  Качество преподавания: ${(all/4).toFixed(2)}`
+ } else {
+   alert('заполните данные полностью')
+ }
 })
 
 clear.addEventListener('click', () => {
