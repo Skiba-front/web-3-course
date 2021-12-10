@@ -22,7 +22,15 @@ for (let i = 0; i < arrCheckBox.length; i++) {
 }
 
 but.addEventListener('click', () => {
-  if (cost == 484700) {
+  let count = 0
+
+  for(let i = 0; i < arrCheckBox.length; i++) {
+    if (arrCheckBox[i].checked == true) {
+      count++
+    }
+  }
+
+  if (count === arrCheckBox.length) {
     res.textContent = `Цена: ${cost * 0.9}`
     alert(`Ваш заказ успешно обработан
 Стоимость со скидкой: ${cost * 0.9}
