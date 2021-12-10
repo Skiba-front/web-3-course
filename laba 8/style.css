@@ -1,0 +1,61 @@
+.main {
+  height: 530px;
+  width: 500px;
+  margin-top: 200px;
+  margin-left: 650px;
+  background-color: rgb(206, 205, 200);
+}
+
+.head {
+  padding-top: 20px;
+  padding-left: 70px;
+}
+
+.check {
+  width: 240px;
+  margin-left: 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.res {
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.rightRes {
+  padding-right: 20px;
+}
+
+#result {
+margin-right: 5px;
+}
+
+.rightResult {
+  margin-right: 10px;
+}
+
+#res {
+  margin-right: 20px;
+}
+
+#count {
+  height: 40px;
+  width: 110px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+#clear {
+  height: 40px;
+  width: 110px;
+  margin-top: 30px;
+  margin-right: 70px;
+}
+
+.lin {
+  margin-left: 20px;
+}

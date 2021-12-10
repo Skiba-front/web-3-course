@@ -1,0 +1,33 @@
+.main{
+  width: 600px;
+  height: 600px;
+  margin-top: 200px;
+  margin-left: 700px;
+  background-color: rgb(225, 230, 230);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+img {
+  margin-top: 20px;
+  height: 200px;
+  width: 350px;
+}
+
+#result {
+  margin-top: 40px;
+}

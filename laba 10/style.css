@@ -1,0 +1,56 @@
+.main {
+  background-color: rgb(246, 221, 180);
+  height: 400px;
+  width: 500px;
+  margin-left: 650px;
+  margin-top: 300px;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-left: 90px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuRight {
+  margin-right: 30px;
+}
+
+.menuLeft {
+  margin-left: 30px;
+}
+
+#basicConfiguration {
+  width: 60px;
+}
+
+.text {
+  display: absolute;
+  margin-top: -15px;
+  margin-left: 180px;
+}
+
+.cc {
+  margin-top: 40px;
+}
+
+.wid {
+  width: 110px
+}
+
+#res {
+  margin-top: 20px;
+  margin-left: 70px;
+  height: 30px;
+  width: 80px;
+}
+
+#clear {
+  margin-left: 170px;
+  height: 30px;
+  width: 80px;
+}
